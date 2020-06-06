@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:background="@drawable/back_sky_blue">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Вход"
+        android:textSize="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black_blue"
+        android:fontFamily="@font/raleway_bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ф.И.О"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="21dp"
+        android:textColor="@color/black_blue"
+        android:textSize="20dp"
+        android:fontFamily="@font/raleway_bold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/back_edit"
+        android:hint="например: Даниил Иванович Петров"
+        android:padding="15dp"
+        android:textSize="15dp"
+        android:fontFamily="@font/raleway_medium"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Мобильный телефон"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="21dp"
+        android:textColor="@color/black_blue"
+        android:textSize="20dp"
+        android:fontFamily="@font/raleway_bold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/back_edit"
+        android:hint="+7(       )      -      -      -"
+        android:padding="15dp"
+        android:textSize="15dp"
+        android:inputType="number|phone"
+        android:fontFamily="@font/raleway_medium"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ll"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Или пройти вход через:"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black_blue"
+            android:textSize="15dp"
+            android:fontFamily="@font/raleway_bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+
+        <ImageButton
+            android:id="@+id/login_gos"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/gos_us"
+            android:layout_marginRight="25dp"
+            style="?android:attr/borderlessButtonStyle"/>
+
+            </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle"
+        android:text="Войти"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        style="?android:attr/borderlessButtonStyle"
+        android:fontFamily="@font/raleway_bold"/>
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:background="@drawable/profile"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Персональная информация"
+        android:textColor="@color/black_blue"
+        android:fontFamily="@font/raleway_bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/test_stat"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:background="@drawable/button_123"
+            android:text="Статистика"
+            android:textColor="@color/white"
+            android:fontFamily="@font/raleway_bold"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:background="@drawable/button_123"
+            android:text="Голоса"
+            android:textColor="@color/white"
+            android:fontFamily="@font/raleway_bold"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="--   --   --   Новости   --   --   --"
+        android:gravity="center"
+        android:textColor="@color/black_blue"
+        android:fontFamily="@font/raleway_bold"
+        android:textSize="20dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/news_1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/news_2" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/news_3" />
+
+</LinearLayout>
